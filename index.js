@@ -17,10 +17,8 @@ const postNow =   function(){
   })}
 
 let storeTweet;
-let tweetThis;
-let users = '@POTUS, @realDonaldTrump, @whitehouse, @cnn'
 
-var stream = T.stream('statuses/filter', { follow: ['822215679726100480'], language: 'en' })
+const stream = T.stream('statuses/filter', { follow: ['822215679726100480'], language: 'en' })
 
 stream.on('tweet', function (tweet) {
   if(tweet.user.id == '822215679726100480') {
