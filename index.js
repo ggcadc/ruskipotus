@@ -4,7 +4,7 @@ const T = new Twit(config);
 const translate = require('google-translate-api')
 
 let statusUpdate = {
-  status: 'trying once again'
+  status: 'tweet happens'
 }
 const setStatus = function(text){
   statusUpdate.status = text
